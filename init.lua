@@ -30,7 +30,6 @@ require('packer').startup(function(use)
         -- coding snip
         use {'L3MON4D3/LuaSnip', tag = 'v2.*'}
         use 'rafamadriz/friendly-snippets'
-        use 'vim-airline/vim-airline'
 
         -- syntax enhance
         -- use {'pangloss/vim-javascript', ft = {'javascript'}}
@@ -39,10 +38,6 @@ end)
 
 -- From postva/vim-vue
 -- vim.g.vue_pre_processors = {}
-
--- From vim-airline
-vim.g['airline_extensions'] = {'tabline'}
-vim.g['airline#extensions#tabline#enabled'] = 1
 
 -- From vim-syntastic/syntastic
 vim.api.nvim_create_user_command('PHPLint', function(params)
